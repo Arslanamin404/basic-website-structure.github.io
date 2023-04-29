@@ -1,0 +1,241 @@
+@font-face {
+  font-family: BebasNeue;
+  src: url(../Fonts/BebasNeue/BebasNeue-Regular.ttf);
+  font-family: LucyRose;
+  src: url(../Fonts/LucyRose/LucyRosePERSONAL-Regular.otf);
+  font-family: Montserrat;
+  src: url(../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  font-family: Autography;
+  src: url(../Fonts/Autography/Autography.otf);
+  font-family: Playfair;
+  src: url(../Fonts/Playfair/PlayfairDisplaySC-Black.ttf);
+  font-family: Poppins;
+  src: url(../Fonts/Poppins/Poppins-Black.ttf);
+  font-family: roboto;
+  src: url(../Fonts/Roboto/Roboto-Black.ttf);
+  font-family: aquatico;
+  src: url(../Fonts/Aquatico/Aquatico-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flexcontainer {
+  display: flex;
+}
+.subcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#flexitem2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Montserrat";
+  background-color: black;
+  color: white;
+  width: 100%;
+  align-self: flex-start;
+}
+#flexitem2::first-letter {
+  color: red;
+  font-size: 70px;
+  font-family: "Autography";
+  font-weight: bolder;
+}
+#flexitem3 {
+  text-align: justify;
+  font-family: "LucyRose";
+  font-size: 22px;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  align-self: center;
+}
+
+h1 {
+  color: rgb(241, 0, 0);
+  padding-top: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "aquatico";
+}
+p {
+    line-height: 2.2rem;
+  font-size: 22px;
+  font-family: "BebasNeue";
+  padding-left: 20px;
+  padding-right: 20px;
+}
+h2 {
+  padding-top: 35px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 36px;
+  font-family: monospace;
+}
+.toggleIcon {
+  font-size: 2.5rem;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+nav {
+  color: white;
+  width: 25%;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0 10px;
+  left: -25%;
+  transition: 0.3s;
+}
+nav ul {
+  text-align: center;
+  margin-top: 30px;
+}
+nav ul li {
+  list-style: none;
+  padding: 10px 20px;
+}
+nav li a {
+  display: block;
+  color: white;
+  padding: 0px 15px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+nav ul li a:hover {
+  color: RED;
+  text-decoration: underline;
+}
+nav ul li a.active {
+  color: orange;
+}
+.close {
+  font-size: 4rem;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+.showMenu {
+  left: 0%;
+  transition: 0.6s;
+}
+
+#flexitem4 {
+  margin-top: 20px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  width: 100%;
+  align-self: flex-end;
+  background-color: #272727;
+}
+.footer ul {
+  display: flex;
+  list-style: none;
+  padding-left: 145px;
+}
+.footer a {
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.footer a:hover {
+  color: rgb(255, 191, 0);
+}
+
+@media screen and (max-width: 720px) {
+  .flexcontainer {
+    display: flex;
+  }
+  .subcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #flexitem2 {
+    padding: 20px 0;
+    font-family: "Varela Round";
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+  }
+  #flexitem2::first-letter {
+    color: red;
+    font-size: 2.5rem;
+    font-family: "Autography";
+    font-weight: bolder;
+  }
+  #flexitem3 {
+    text-align: justify;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 14px;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+  }
+  h1 {
+    color: red;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0px 6px;
+    margin: 15px 6px;
+  }
+  p {
+    line-height: 1.6rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+  h2 {
+    padding-left: 9px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Times New Roman";
+  }
+  /* SideMenuNAvbar */
+  nav {
+    width: 75%;
+    left: -75%;
+  }
+  .toggleIcon {
+    top: 20px;
+    font-size: 2.3rem;
+    margin: 0;
+    left: 25px;
+  }
+  .showMenu {
+    left: 0%;
+    transition: 0.6s;
+  }
+
+  #flexitem4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #272727;
+  }
+  .footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex-direction: column;
+  }
+  .footer ul li{
+    font-size: 2rem;
+  }
+}
